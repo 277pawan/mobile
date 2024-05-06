@@ -38,19 +38,22 @@ export default Index
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        justifyContent: 'center',
+        alignItems: "center",
         backgroundColor: "black",
     },
     childcontainer: {
-        marginTop: 40,
-        flex: 1,
+        display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        height: "100%",
+        marginTop: 100,
+        gap: 10,
         backgroundColor: 'black',
-        gap: 18
     },
     imageContainer: {
         width: "full",
-        flex: 1,
         flexDirection: "row",
         justifyContent: 'center',
         alignItems: "center",
@@ -73,14 +76,14 @@ const styles = StyleSheet.create({
         fontSize: 34
     },
     desc: {
+        marginTop: 30,
         color: 'white',
-        fontFamily: "Arial sans-serif",
         fontSize: 16,
         textAlign: "center",
     },
     button: {
         width: "60%",
-        backgroundColor: 'blue',
+        backgroundColor: 'red',
         paddingVertical: 10,
         paddingHorizontal: 20,
         marginVertical: 20,
